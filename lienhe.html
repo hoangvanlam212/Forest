@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liên Hệ - Địa Danh Lịch Sử Việt Nam</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg,#8b0000,#c0392b);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+header h1 { margin: 0; font-size: 40px; }
+header p { margin-top: 10px; }
+
+/* Navbar */
+nav {
+  background: #2c3e50;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover { color: #f1c40f; }
+
+/* Container */
+.container { width: 90%; max-width: 600px; margin: 40px auto; background:white; padding:30px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); }
+
+/* Form */
+form { display: flex; flex-direction: column; gap: 15px; }
+form label { font-weight: bold; }
+form input, form textarea { padding: 10px; border:1px solid #ccc; border-radius:5px; width:100%; }
+form button { background:#c0392b; color:white; border:none; padding:12px; border-radius:5px; cursor:pointer; font-weight:bold; transition:0.3s; }
+form button:hover { background:#8b0000; }
+
+/* Footer */
+footer {
+  background:#2c3e50; color:white;
+  text-align:center; padding:20px; margin-top:40px;
+  font-size:14px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📬 Liên Hệ</h1>
+  <p>Gửi phản hồi hoặc thắc mắc về các địa danh lịch sử</p>
+</header>
+
+<nav>
+  <a href="index.html">Trang chủ</a>
+  <a href="lienhe.html">Liên hệ</a> 
+</nav>
+
+<div class="container">
+  <form action="#" method="post">
+    <label for="name">Họ và Tên</label>
+    <input type="text" id="name" name="name" placeholder="Nhập họ và tên..." required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Nhập email..." required>
+
+    <label for="message">Nội dung</label>
+    <textarea id="message" name="message" rows="5" placeholder="Nhập nội dung..." required></textarea>
+
+    <button type="submit">Gửi</button>
+  </form>
+</div>
+
+<footer>
+  <p>© 2025 - Website lịch sử Việt Nam</p>
+</footer>
+
+</body>
+</html>
